@@ -1,0 +1,77 @@
+#Aboutsection {
+    margin: 0rem;
+    padding-top: 7.5rem;
+    padding-bottom: 8rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+.AboutContainer {
+    background: rgb(13, 37, 79);
+    color: white;
+    border-radius: 3rem;
+    width: 70rem;
+    margin: auto;
+    padding:30px 10px;
+}
+.AboutContainer p {
+    margin: 2rem 6rem;
+    font-style: italic;
+}
+
+.AboutContainer a {
+    color: white;
+    text-decoration: underline;
+    display: inline-block;
+    padding: 1rem;
+}
+.userImg {
+    margin: auto;
+    display: block;
+    margin-top: 40px;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 5px solid rgb(13, 37, 79);
+}
+
+.AboutTitle {
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+.aboutPara{
+    text-align: justify;
+}
+.infoContainer{
+    padding-bottom: 2rem;
+}
+.infoContainer h2{
+    padding: 2rem;
+}
+.infoTable {
+    margin: auto;
+    width: 60%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Header row styles */
+.infoTable th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Data row styles */
+.infoTable td {
+    padding: 8px 20px;
+    border: 1px solid #ddd;
+}
+
+.tableData {
+    text-align: left;
+}

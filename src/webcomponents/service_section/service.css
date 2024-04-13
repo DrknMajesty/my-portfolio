@@ -1,0 +1,84 @@
+#services {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 7.5rem;
+}
+
+.serviceTitle {
+    font-size: 3rem;
+    font-weight: 500;
+    padding-top: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.serviceDescription {
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 55%;
+    padding: 0 2rem;
+    margin: auto;
+}
+.serviceDescription p{
+    text-align: center;
+    font-style: italic;
+    margin: 2rem auto;
+}
+
+.serviceContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem auto;
+    width: 75%;
+}
+.serviceBox{
+    display: flex;
+    height: 13rem;
+    max-width: 120rem;
+    margin: 0.5rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: rgb(13, 37, 79);
+    align-items: center;
+}
+.serviceText {
+    color: white;
+}
+
+.serviceBoxImg {
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+    border-radius: 0.5rem;
+}
+
+.serviceBoxText {
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+.serviceBoxText p{
+    text-align: justify;
+    font-style: italic;
+    padding: 0.5rem;
+}
+
+/* @media screen and (max-width: 768px){
+
+    .serviceContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin: 1.5rem auto;
+        width: 75%;
+    }
+} */
