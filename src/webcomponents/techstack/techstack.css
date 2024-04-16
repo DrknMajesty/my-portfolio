@@ -1,7 +1,9 @@
 #techSection{
+    padding-top: 7.5rem;
+}
+.TechContainer{
     color: white;
     background-color:  rgb(13, 37, 79);
-    min-height: calc(100vh - 4rem);
     width: 100vw;
     max-width: 60rem;
     display: flex;

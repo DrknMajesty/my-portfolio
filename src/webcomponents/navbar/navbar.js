@@ -1,27 +1,30 @@
 import React from "react";
 import './navbar.css';
-import callImg from "../../webassets/navbar_img/phone-outline.svg";
 import userImg from "../../webassets/navbar_img/Profile Icon.jpg";
+import PhoneCallButton from "../buttons/call";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
+    const phoneNumber = '1234567890';
+
     return (
        <nav className="navbar">
             <img src={userImg} alt="User Logo" className="logo"/>
             <div className="navMenu">
-                <a href="#intro" className="navMenuListItem">
+                <Link to="intro" className="navMenuListItem" smooth={true} duration={800}>
                     Home
-                </a>
-                <a href="#Aboutsection" className="navMenuListItem">
-                    About Me
-                </a>
-                <a href="#services" className="navMenuListItem">
+                </Link>
+                <Link to="Aboutsection" className="navMenuListItem" smooth={true} duration={800}>
+                    About
+                </Link>
+                <Link to="services" className="navMenuListItem" smooth={true} duration={800}>
                     Services
-                </a>
+                </Link>
+                <Link to="techSection" className="navMenuListItem" smooth={true} duration={800}>
+                    Tech Stack
+                </Link>
             </div>
-            <button className="navMenuButton">
-                <img src={callImg} alt="call-logo" className="callLogo"/>
-                Contact Me
-            </button>
+            <PhoneCallButton phoneNumber={phoneNumber}/>
        </nav>
     )
 }
