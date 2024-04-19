@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
+import "./scroll.css";
 
 const ScrollToButton = () => {
     const scrollToSection = () => {
@@ -11,7 +12,7 @@ const ScrollToButton = () => {
 
     return (
         <div>
-            <button onClick={scrollToSection}>Scroll to Target Section</button>
+            <button className="button-hire" onClick={scrollToSection}>Scroll to Target Section</button>
         </div>
     );
 };

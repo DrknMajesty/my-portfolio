@@ -5,7 +5,7 @@ import PhoneCallButton from "../buttons/call";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
-    const phoneNumber = '1234567890';
+    const phoneNumber = '09206124365';
 
     return (
        <nav className="navbar">

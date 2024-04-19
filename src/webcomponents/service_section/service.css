@@ -48,6 +48,7 @@
     border-radius: 0.5rem;
     background: rgb(13, 37, 79);
     align-items: center;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 .serviceText {
     color: white;
