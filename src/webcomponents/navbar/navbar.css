@@ -1,8 +1,9 @@
+/* General styles for the navbar */
 .navbar {
     background: rgb(13, 34, 164);
     height: 7rem;
     width: 80vw;
-    max-width: 100rem;
+    max-width: 100%;
     margin: 0 auto;
     padding: 1rem 2rem;
     display: flex;
@@ -16,6 +17,7 @@
     border-bottom-left-radius: 20px;
 }
 
+/* Styles for the logo */
 .logo {
     object-fit: cover;
     height: 4rem;
@@ -23,22 +25,61 @@
     border-radius: 50%;
 }
 
+/* Styles for navigation menu items */
 .navMenuListItem {
     color: white;
     margin: 1rem;
     cursor: pointer;
 }
 
-.navMenuListItem:hover{
+.navMenuListItem:hover {
     color: white;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid white;
     transition: all ease-in-out 50ms;
 }
 
-
-@media screen and (max-width: 768px) {
-    .navMenu {
-      display: none; /* Hide the links by default on small screens */
+/* Media query for screens smaller than 1024px */
+@media screen and (max-width: 1024px) {
+    .navbar {
+        padding: 1rem;
     }
-  }
+    .navMenuListItem {
+        margin: 0.5rem;
+    }
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem;
+    }
+    .logo {
+        height: 3rem;
+        width: 3rem;
+    }
+    .navMenuListItem {
+        margin: 0.5rem 0;
+        width: 100%;
+        text-align: center;
+    }
+    body {
+        overflow-x: hidden;
+    }
+}
+
+/* Media query for screens smaller than 480px (mobile devices) */
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+    .logo {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .navMenuListItem {
+        display: none;
+    }
+}
